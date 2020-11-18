@@ -1,0 +1,100 @@
+@media (max-width: 1660px) {
+    .about {
+        &__beans {
+            bottom: 120px;
+        }
+        &__text {
+            width: 750px;
+            padding-left: 120px;
+            padding-right: 20px;
+        }
+        &__photo-up,&__photo-down {
+            right: 80px;
+            width: 450px;
+        }
+        &__photo-up {
+            top: -50px;
+        }
+        &__photo-down {
+            bottom: 180px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .main {
+        padding-right: 0px;
+        &__menu {
+            li {
+                margin-right: 25px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            &__shop {
+                padding-right: 40px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .info {
+        &__items {
+            bottom: 110px;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        &__item {
+            margin: 0 40px;
+            width: 25%;
+        }
+        &__header {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .main {
+        &__empty {
+            display: none;
+        }
+        &__menu {
+            width: 100%;
+            &__nav {
+                margin-left: 55px;
+            }
+        }
+        &__descr {
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 25%;
+            &__text {
+                width: 100%;
+            }
+        }
+    }
+    .about {
+        &__photo-down {
+            bottom: 250px;
+        }
+        &__photo-up,&__photo-down {
+            right: 30px;
+            width: 400px;
+        }
+        &__text {
+            width: 500px;
+            padding-left: 30px;
+            padding-right: 0;
+        }
+        &__slide {
+            padding-top: 40px;
+        }
+        &__beans {
+            bottom: 90px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import 'vars';
+
+body {
+    background-color: $brown-color;
+    font-family: 'Roboto', sans-serif;
+    color: $white-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-info-wrapper {
+    background: url('../../../img/background.jpg') center center/cover no-repeat;
+}
+
+@import 'sections/main';
+@import 'sections/info';
+@import 'sections/about';
+@import 'sections/shop';
+@import 'media';

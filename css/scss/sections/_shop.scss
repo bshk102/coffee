@@ -1,0 +1,156 @@
+.shop {
+    min-height: 1037px;
+    padding-top: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__prevArrow {
+        width: 24px;
+        height: 24px;
+        border-left: 3px solid $orange-color;
+        border-top: 3px solid $orange-color;
+        transform: matrix(1, -2, 1, 2, 0, 0);
+        cursor: pointer;
+        position: absolute;
+        left: 105px;
+        opacity: 0.3;
+    }
+    &__nextArrow {
+        width: 24px;
+        height: 24px;
+        border-right: 3px solid $orange-color;
+        border-bottom: 3px solid $orange-color;
+        transform: matrix(1, -2, 1, 2, 0, 0);
+        cursor: pointer;
+        position: absolute;
+        right: 105px;
+        opacity: 0.3;
+    }
+    &__arrowActive {
+        opacity: 1;
+        &:hover {
+            width: 30px;
+            height: 30px;
+            transition: 0.7s;
+        }
+    }
+    &__divider {
+        width: 3px;
+        height: 752px;
+        background: $orange-color;
+        opacity: 0.3;
+        margin-top: 12px;
+    }
+    &__items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 1467px;
+        overflow: hidden;
+    }
+    &__item {
+        margin: 0 49px;
+        transition: 1s;
+    }
+    &__itemWrapper {
+        display: flex;
+    }
+    &__img {
+        margin-right: 48px;
+    }
+    &__header {
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 89.2%;
+        color: $orange-color;
+    }
+    &__roastrate {
+        margin-top: 9px;
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 89.2%;
+        letter-spacing: 0.13em;
+        font-feature-settings: 'pnum' on, 'onum' on;
+        color: #fff;
+        margin-top: 30px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.13em;
+        color: $grey-color;
+        opacity: 0.8;
+        margin-top: 18px;
+    }
+    &__btn {
+        width: 172.83px;
+        height: 52.07px;
+        background: $orange-color;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 89.2%;
+        letter-spacing: 0.09em;
+        color: #fff;
+        margin-top: 24px;
+    }
+    &__weight {
+        margin-top: 24px;       
+        span {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.14em;
+            color: #fff;
+        }
+    }
+    &__chooseweight,&__choosegrind {
+        width: 364px;
+        height: 42px;
+        border-radius: 10px;
+        background: $grey-color;
+        cursor: pointer;
+        li {
+            float: left;
+            width: 91px;
+            height: 42px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 42px;
+            color: #000;
+        }
+    }
+    &__choosegrind {
+        li {
+            width: 121.3px;
+        }
+    }
+    &__grind {
+        margin-top: 20px;
+        span {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.14em;
+            color: #fff;
+        }
+    }
+    p {
+        width: 391px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: 0.09em;
+        color: $white-color;
+        margin-top: 47px;
+    }
+    &__active {
+        background: $orange-color;
+    }
+}

@@ -1,0 +1,63 @@
+.about {    
+    min-height: 835px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+    letter-spacing: 0.09em;
+    color: #000;
+    position: relative;   
+    &__slide {
+        height: 670px;
+        padding-top: 93px;
+    }
+    &__text {
+        width: 870px;
+        padding-left: 176px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__beans {
+        position: absolute;
+        left: 465px;
+        transform: translateX(-50%);
+        bottom: 216px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: block;
+            margin: 0 21px;
+            cursor: pointer;
+        }
+    }
+    &__photo-up,&__photo-down {
+        position: absolute;
+        right: 111px;
+    }
+    &__photo-up {
+        top: -91px;
+    }
+    &__photo-down {
+        bottom: 131px;
+    }
+}
+
+#slide {
+    transition: opacity 1.5s;
+}
+.slide-1 {
+    background: url('../../../img/about_background.png') center center/cover no-repeat;
+    font-weight: 400;
+    height: 835px;
+}
+
+.slide-2 {
+    background: #252335;
+    color: #fff;   
+}
+
+.slide-3 {
+    background: #E7B568;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Best Coffee - кофейный магазин</title>
+</head>
+<body>
+    <div class="main-info-wrapper">
+        <section class="main">
+            <div class="main__header">
+                <div class="main__empty"></div>
+                <div class="main__menu">
+    
+                    <ul class="main__menu__nav">
+                        <li><a href="#info">О нас</a></li>
+                        <li><a href="#shop">Ассортимент</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+    
+                    <div class="main__menu__shop">
+                        <a href="#" class="main__menu__account">
+                            <img src="icons/main_account.png" alt="account">
+                        </a>
+                        <a href="#" class="main__menu__cart">
+                            <img src="icons/main_cart.png" alt="cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="main__descr">
+                <img src="img/main_logo.png" alt="logo" class="main__descr__logo">
+                <div class="main__descr__text">
+                    Мы обжариваем кофе более 10 лет.
+                    <br />
+                    <br />
+                    На сегодняшний день у нас одно из самых современных, технологичных и крупных обжарочных производств в России.
+                </div>
+                <a href="#shop">
+                    <button class="main__descr__btn">Купить кофе</button>
+                </a>
+            </div>
+    
+        </section>
+    
+        
+    
+        <section class="info" id="info">
+            <div class="info__items">
+                <div class="info__item">
+                    <div class="info__round">
+                        <img src="icons/info_beans.png" alt="beans" class="info__img">
+                    </div>
+                    <div class="info__header">
+                        Качество кофейных <br> зерен
+                    </div>
+                    <p>Мы подняли контроль качества на следущий уровень. Лишь 5% всех зерен в мире достойно оказаться в чашке Best Coffee.</p>
+                </div>
+                <div class="info__item">
+                    <div class="info__round">
+                        <img src="icons/info_cup.png" alt="cup" class="info__img">
+                    </div>
+                    <div class="info__header">
+                        Наш фирменный <br> мягкий вкус
+                    </div>
+                    <p>Совершенствуя наш метод производства вот уже 50 лет, мы добились богатого, изысканного вкуса без какой—либо горечи.</p>
+                </div>
+                <div class="info__item">
+                    <div class="info__round">
+                        <img src="icons/info_clocks.png" alt="clocks" class="info__img">
+                    </div>
+                    <div class="info__header">
+                        Медленная обжарка для <br> совершенного вкуса
+                    </div>
+                    <p>Все наши бленды производятся по технологии медленной обжарки с особым вниманием и заботой, раскрывая вкус и аромат каждого зернышка.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="about">
+        <div class="about__beans">
+            <img src="icons/about_bean_active.png" alt="slide" class="about__bean">
+            <img src="icons/about_bean.png" alt="slide" class="about__bean">
+            <img src="icons/about_bean.png" alt="slide" class="about__bean">
+        </div>
+        <div id="slide"></div>
+    </section>
+
+    <section class="shop" id="shop">
+
+        <div class="shop__prevArrow"></div>
+        <div class="shop__items" id="shop__items"></div>
+        <div class="shop__nextArrow shop__arrowActive"></div>
+
+    </section>
+
+    <script src="js/state.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sliderData.js"></script>
+    <script src="js/index.js"></script>
+    
+    <!-- <script src="js/slider.js"></script>     -->
+    <script src="js/shopItemsScroll.js"></script>
+</body>
+</html>
