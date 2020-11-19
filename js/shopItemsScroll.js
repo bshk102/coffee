@@ -5,14 +5,21 @@ class ItemsScroll {
         this.item = item
         this.range = range
         this.translateX = 0
+        let screenWidth = screen.width
     }
 
     move(e) {
+        let showedItems = 3
+        let screenWidth = screen.width
+        if (screenWidth <= 1660) {
+            showedItems = 2;
+        }
+
         const checkArrows = () => {
             if (this.translateX === 0) {
                 this.prevArrow.classList.remove('shop__arrowActive')
             }
-            if (this.translateX === this.range * (CATALOG.length - 3)) {
+            if (this.translateX === this.range * (CATALOG.length - showedItems)) {
                 this.nextArrow.classList.remove('shop__arrowActive')
             }
         }
@@ -20,7 +27,7 @@ class ItemsScroll {
 
         const nextItem = () => {
             checkArrows()
-            if (this.translateX !== this.range * (CATALOG.length - 3)) {
+            if (this.translateX !== this.range * (CATALOG.length - showedItems)) {
                 this.translateX += this.range
                 this.item.forEach(item => item.style.transform = `translateX(-${this.translateX}px)`)
                 this.prevArrow.classList.add('shop__arrowActive')
@@ -56,3 +63,4 @@ const shopItemsScroll = new ItemsScroll(
 )
 
 shopItemsScroll.listener()
+console.log(screen.width)

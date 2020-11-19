@@ -1,5 +1,5 @@
 .about {    
-    min-height: 835px;
+    min-height: fit-content;
     font-size: 18px;
     font-weight: 300;
     line-height: 160%;
@@ -7,7 +7,6 @@
     color: #000;
     position: relative;   
     &__slide {
-        height: 670px;
         padding-top: 93px;
     }
     &__text {
@@ -40,13 +39,10 @@
         top: -91px;
     }
     &__photo-down {
-        bottom: 131px;
+        top: 338px;
     }
 }
 
-#slide {
-    transition: opacity 1.5s;
-}
 .slide-1 {
     background: url('../../../img/about_background.png') center center/cover no-repeat;
     font-weight: 400;
@@ -55,9 +51,11 @@
 
 .slide-2 {
     background: #252335;
-    color: #fff;   
+    color: #fff;
+    height: 670px;   
 }
 
 .slide-3 {
     background: #E7B568;
+    height: 670px;
 }

@@ -131,6 +131,8 @@ class ShopItems {
                     ${descr}
                 </p>
             </div>
+
+            <div class="shop__divider"></div>
             `
 
             state.push({ id, ratio: 1, weight: 50, price, currentPrice: this.calcPrice(price) })

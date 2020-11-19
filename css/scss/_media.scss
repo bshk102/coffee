@@ -19,6 +19,28 @@
             bottom: 180px;
         }
     }
+    .shop {
+        &__prevArrow {
+            left: 50px;
+        }
+        &__nextArrow {
+            right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .shop {
+        &__items {
+            width:978px
+        }
+        &__prevArrow {
+            left: 90px;
+        }
+        &__nextArrow {
+            right: 90px;
+        }
+    }
 }
 
 @media (max-width: 1440px) {
@@ -95,6 +117,17 @@
         }
         &__beans {
             bottom: 90px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .shop {
+        &__prevArrow {
+            left: 40px;
+        }
+        &__nextArrow {
+            right: 40px;
         }
     }
 }
